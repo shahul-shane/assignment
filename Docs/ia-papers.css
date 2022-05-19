@@ -1,0 +1,200 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Caveat', cursive;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    display: flex;
+    height: 50px;
+    width: auto;
+    background: #1b1b1b;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 00px;
+    flex-wrap: wrap;
+  }
+  nav .logo a img{
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+  }
+  nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  nav ul li{
+    margin: 0 5px;
+  }
+  #underline{
+      text-decoration: none;
+  }
+  nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 3px 15px 3px 20px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    color: #111;
+    background: #fff;
+  }
+  nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    justify-content: right;
+    display: none;
+  }
+  input[type="checkbox"]{
+    display: none;
+  }
+ 
+section{
+    margin: 12%  0 0 40%;
+}
+.boxes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.Subject{
+    background-color: white;
+    max-width: 120px;
+    height: auto;
+    padding: 20px;
+    color: black;
+    border: 0.5px solid black;
+    border-radius: 10px;
+}
+h2{
+    text-align: center;
+    margin-top: 5%;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.Subject summary{
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.Subject details p{
+    text-align: center;
+    font-size: 19px;
+    padding-top: 5%;
+}
+
+.Subject details button{
+    background-color: black;
+    width: 100px;
+    margin-top: 10%;
+}
+.Subject a button{
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+    text-decoration:none;
+    font-size: 15px;
+    cursor: pointer;
+}
+ .Subject .DMDW details button{
+    background-color: black;
+    width: 100px;
+    margin-left: 10%;
+}
+@media screen and (max-width:600px) {
+    *{
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Caveat', cursive;
+    }
+
+    .Subject{
+        background-color: white;
+        max-width: 120px;
+        height: auto;
+        padding: 20px;
+        color: black;
+        border: 0.5px solid black;
+        border-radius: 10px;
+        margin-top: 5%;
+    }
+
+} @media (max-width: 900px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 600px) {
+  nav .menu-btn i{
+    display: block;
+  }
+
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav .logo a img{
+      width: 50px;
+      height: 50px;
+      margin-left: -120%;
+    }
+  nav{
+      display: flex;
+      height: 80px;
+      width: 60%;
+      background: #1b1b1b;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px 0 100px;
+      flex-wrap: wrap;
+    }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+  h2{
+    text-align: center;
+    margin-top: 5%;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+}
